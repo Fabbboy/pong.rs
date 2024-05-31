@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Game</title>
-  <script type="module">
-    import init from "./out/ball_game.js"
-    init();
-  </script>
-</head>
-<body>
-  <canvas height="100%" width="100%" id="bevy"></canvas>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <script type="module">
+      import init from "./out/ball_game.js";
+      init();
+    </script>
+    <style>
+      .container {
+        text-align: center;
+      }
+
+      .title {
+        color: #ff0000;
+        font-size: 24px;
+      }
+
+      .game {
+        border: 1px solid #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Pong.rs</h1>
+      <canvas height="100%" width="100%" id="bevy" class="game"></canvas>
+    </div>
+  </body>
 </html>
